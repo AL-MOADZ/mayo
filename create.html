@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Video Call Room</title>
+    <style>
+        /* CSS styles for the form */
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            background-color: #f9f9f9;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <form id="createForm">
+        <label for="roomName">Room Name:</label>
+        <input type="text" id="roomName" name="roomName" required><br><br>
+        
+        <label for="maxParticipants">Max Participants:</label>
+        <input type="text" id="maxParticipants" name="maxParticipants" required><br><br>
+        
+        <input type="submit" value="Create Video Call Room">
+    </form>
+
+    <script src="https://resource.zegocloud.com/prebuilt/crypto-js.js"></script>
+    <script src="https://resource.zegocloud.com/prebuilt/prebuiltToken.js"></script>
+    <script src="https://zegocloud.github.io/zegocloud_prebuilt_webrtc/ZegoPrebuilt/index.umd.js"></script>
+    <script src="SCRIPTed.js"></script>
+</body>
+</html>

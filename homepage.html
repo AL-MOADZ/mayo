@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        background-image: url("ai.avif");
+        background-size: flex;
+    }
+
+    main {
+        background-color: #708bed;
+        text-decoration: double;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+        cursor: pointer;
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .icon {
+        margin-right: 5px;
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    @media screen and (max-width: 800px) {
+        nav ul {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+        }
+        .menu-toggle {
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    /* Hover effect */
+    nav ul li a {
+        color: #fff; /* Default color */
+        text-decoration: none; /* Remove default underline */
+    }
+
+    nav ul li a:hover {
+        color: #b6e20a; /* Change color on hover */
+    }
+
+    /* Admin user section styles */
+    .admin-section {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    /* Changed the class name to better reflect its purpose */
+    .logo-img {
+        width: 200px; /* Adjust the size of the logo */
+        border-radius: 60%;
+        margin-bottom: 15px;
+    }
+
+    /* Background color for text sections */
+    .developer-info {
+        background-color: rgba(34, 179, 242, 0.8); /* Adjust opacity as needed */
+        padding: 2pc;
+        margin-top: 1%;
+        border-radius: 2pc;
+        background-size: cover;
+    }
+
+    .h1 {
+        background-color: rgba(238, 240, 234, 0.8); /* Adjust opacity as needed */
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    .container {
+        background-color: rgba(238, 240, 234, 0.8); /* Adjust opacity as needed */
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    #about {
+        background-color: rgba(232, 243, 238, 0.8); /* Adjust opacity as needed */
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+     .developer-btn {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background-color: #b53de9;
+      text-align: justify;
+      text-size-adjust: 50px;
+      
+
+    }
+    .developer-btn:hover {
+      background-color: #32eee8;
+      
+    }
+    .developer-profile {
+      text-align: center;
+      margin-top: 50px;
+      display: none; /* Hide the developer profile initially */
+      background-image:url("RpH53v.gif")
+    }
+    .developer-profile img {
+      width: 250px; /* Increased width */
+      height: 350px; /* Increased height */
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .developer-info {
+      margin-bottom: 20px;
+    }
+
+
+</style>
+</head>
+<body>
+</div>
+
+  
+<header>
+    
+    <div>
+        <!-- Replaced the profile image with a logo image -->
+        <img src="tribe language.png" class="logo-img" alt="Tribe Language E-Learning Logo">
+        <h1>WELCOME TO TRIBE LANGUAGE E-LEARNING</h1>
+    </div>
+
+   
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="homepage.html"><i class="fas fa-home icon"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle icon"></i> About</a></li>
+            <li><a href="disclaimer .html"><i class="fas fa-balance-scale icon"></i></i></i> Disclaimer</a></li>
+            <li><a href="reference.html"><i class="fas fa-link icon"></i></i> Reference</a></li>
+            <li><a href="login.html"><i class="fas fa-envelope icon"></i> Login</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+</header>
+
+  
+ 
+<main>
+   
+
+    <!-- Admin user section -->
+    <section class="admin-section">
+        <!-- Replaced the profile image with a logo image -->
+        <img src="globe.gif" class="logo-img" alt="Tribe Language E-Learning Logo">
+        
+       
+        
+       
+    </section>
+</main>
+
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('active');
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>
